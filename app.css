@@ -1,0 +1,88 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about-us h2 {
+    margin-bottom: 20px;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #f0f0f0;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.projects h2 {
+    margin-bottom: 20px;
+}
+
+/* Mission and Vision Section */
+.mission-vision {
+    background-color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.mission-vision h2 {
+    margin-bottom: 20px;
+}
+
+/* Contact Us Section */
+.contact {
+    background-color: #f0f0f0;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
