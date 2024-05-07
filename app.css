@@ -9,6 +9,62 @@ body {
     font-family: Arial, sans-serif;
 }
 
+#logo{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    border-radius: 50px;
+}
+
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+
+.navbar {
+    list-style-type: none;
+    align-items: baseline;
+    display: flex; /* Make navbar flex container */
+    justify-content: center; /* Align items to the start */
+}
+
+.navbar li {
+    
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* Responsive Navigation */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: block;
+        text-align: center;
+    }
+    
+    .navbar li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .navbar li a {
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -17,9 +73,13 @@ body {
 
 /* Hero Section */
 .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     background-color: #f0f0f0;
     text-align: center;
     padding: 100px 0;
+    gap: 10px;
 }
 
 .hero-content h1 {
@@ -27,10 +87,24 @@ body {
     margin-bottom: 20px;
 }
 
+.hero-content{
+    
+    height: 600px;
+}
+
 .hero-content p {
     font-size: 18px;
 }
 
+#hero-image{
+    width: 700px;
+    height: 470px;
+    border-radius: 30px;
+}
+
+#hero-par{
+    
+}
 /* About Us Section */
 .about-us {
     background-color: #fff;
