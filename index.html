@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReMaya ORg</title>
     <link rel="stylesheet" href="app.css">
-    
 </head>
 <body>
     <!--nav bar-->
@@ -108,106 +107,51 @@ nurturing environment for the children
    <!--Contact section-->
 
 <section class="contact-section">
-    <div class="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
-        <div class="container mx-auto">
-          <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
-            <div class="text-center">
-              <h1
-                class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200"
-              >
-                Contact Us
-              </h1>
-              <p class="text-gray-400 dark:text-gray-400">
-                Fill up the form below to send us a message.
-              </p>
-            </div>
-            <div class="m-7">
-              <form action="https://api.web3forms.com/submit" method="POST" id="form">
-                <input type="hidden" name="access_key" value="d3255553-9662-4110-89ab-a9a400f0e69c" />
-                <input
-                  type="hidden"
-                  name="subject"
-                  value="New Submission from Web3Forms"
-                />
-                <input
-                  type="hidden"
-                  name="redirect"
-                  value="https://web3forms.com/success"
-                />
-                <input type="checkbox" name="botcheck" id="" style="display: none;" />
-                <div class="mb-6">
-                  <label
-                    for="name"
-                    class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
-                    >Full Name</label
-                  >
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="John Doe"
-                    required
-                    class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
-                  />
-                </div>
-                <div class="mb-6">
-                  <label
-                    for="email"
-                    class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
-                    >Email Address</label
-                  >
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="you@company.com"
-                    required
-                    class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
-                  />
-                </div>
-                <div class="mb-6">
-                  <label for="phone" class="text-sm text-gray-600 dark:text-gray-400"
-                    >Phone Number</label
-                  >
-                  <input
-                    type="text"
-                    name="phone"
-                    id="phone"
-                    placeholder="+1 (555) 1234-567"
-                    required
-                    class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
-                  />
-                </div>
-                <div class="mb-6">
-                  <label
-                    for="message"
-                    class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
-                    >Your Message</label
-                  >
-      
-                  <textarea
-                    rows="5"
-                    name="message"
-                    id="message"
-                    placeholder="Your Message"
-                    class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
-                    required
-                  ></textarea>
-                </div>
-                <div class="mb-6">
-                  <button
-                    type="submit"
-                    class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none"
-                  >
-                    Send Message
-                  </button>
-                </div>
-                <p class="text-base text-center text-gray-400" id="result"></p>
-              </form>
-            </div>
-          </div>
-        </div>
+ <div>
+  <div class="contact-intro">
+    <h2 class="contact-title">Get in Touch</h2>
+    <p class="contact-description">
+      Fill out the form below and we'll get back to you as soon as possible.
+    </p>
+  </div>
+
+  <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="d3255553-9662-4110-89ab-a9a400f0e69c" />
+    <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+    <input type="hidden" name="from_name" value="My Website" />
+    <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+
+    <div class="form-group-container">
+      <div class="form-group">
+        <label for="name" class="form-label">Name</label>
+        <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
       </div>
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+      </div>
+      <div class="form-group">
+        <label for="phone" class="form-label">Phone</label>
+        <input id="phone" name="phone" class="form-input" placeholder="+254 7123456" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+      </div>
+    </div>
+    <button class="form-submit" type="submit">Send Message</button>
+  </form>
+ </div>
+ <div class="contact-company">
+  <h1>Contact us</h1>
+  <ul>
+    <li><a href="">facebook</a></li>
+  </ul>
+ </div>
+</section>
+<script src="https://js.hcaptcha.com/1/api.js"></script>
+
     <!-- Footer -->
     <footer>
         <div class="container">
