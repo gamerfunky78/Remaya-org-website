@@ -20,48 +20,84 @@ body {
 
 
 /* Navigation Bar */
+/* Navigation Bar */
 nav {
     background-color: #333;
-    padding: 10px 0;
-    height: 60px;
+    padding: 10px 20px;
     width: 100%;
     position: fixed;
-    top: 0px;
+    top: 0;
 }
 
 .navbar {
     list-style-type: none;
-    align-items: baseline;
-    display: flex; /* Make navbar flex container */
-    justify-content: flex-end; /* Align items to the start */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.navbar li{
-    height: 40px;
-    cursor: pointer;
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar li:first-child {
+    margin-right: auto;
 }
 
 .navbar li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 15px;
+}
+
+.navbar-toggle {
+    display: none;
 }
 
 /* Responsive Navigation */
 @media screen and (max-width: 768px) {
     .navbar {
-        display: block;
-        text-align: center;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
     }
     
     .navbar li {
-        display: block;
+        margin-right: 0;
         margin-bottom: 10px;
     }
-    
-    .navbar li a {
+
+    .navbar-toggle {
         display: block;
-        padding: 10px 0;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .navbar-toggle .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    .change .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .change .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .change .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .navbar.collapsed {
+        height: 0;
+        overflow: hidden;
     }
 }
 
@@ -240,8 +276,8 @@ nav {
   }
   
   .form-submit {
-    width: 20%;
-    height: 50px;
+    width: 30%;
+    height: 40px;
     margin-top: 1.2rem;
     background-color: #3124ca;
     color: #fff;
