@@ -10,8 +10,8 @@ body {
 }
 
 #logo{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     position: absolute;
     top: 0px;
     left: 5px;
@@ -23,7 +23,7 @@ body {
 nav {
     background-color: #333;
     padding: 10px 0;
-    height: 80px;
+    height: 60px;
     width: 100%;
     position: fixed;
     top: 0px;
@@ -33,11 +33,12 @@ nav {
     list-style-type: none;
     align-items: baseline;
     display: flex; /* Make navbar flex container */
-    justify-content: center; /* Align items to the start */
+    justify-content: flex-end; /* Align items to the start */
 }
 
-.navbar li {
-    
+.navbar li{
+    height: 40px;
+    cursor: pointer;
 }
 
 .navbar li a {
@@ -80,16 +81,27 @@ nav {
     text-align: center;
     padding: 100px 0;
     gap: 10px;
+    height: 650px;
 }
 
 .hero-content h1 {
     font-size: 36px;
     margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
 }
 
 .hero-content{
     
     height: 600px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.hero-content a{
+    
+    text-decoration: underline;
+    color: black;
 }
 
 .hero-content p {
@@ -102,29 +114,38 @@ nav {
     border-radius: 30px;
 }
 
-#hero-par{
-    
-}
 /* About Us Section */
 .about-us {
     background-color: #fff;
     padding: 80px 0;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
 }
 
 .about-us h2 {
     margin-bottom: 20px;
+    text-align: center;
+    color: hsla(251, 76%, 50%, 0.842);
 }
 
 /* Projects Section */
 .projects {
     background-color: #f0f0f0;
     padding: 80px 0;
-    text-align: center;
 }
 
 .projects h2 {
     margin-bottom: 20px;
+    text-align: center;
+}
+
+.each-proj{
+    display: flex;
+    justify-content: space-around;
+}
+.each-proj p{
+    width: 200px;
 }
 
 /* Mission and Vision Section */
