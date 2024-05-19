@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReMaya ORg</title>
     <link rel="stylesheet" href="app.css">
+    <link rel="shortcut icon" href="./Images/logo.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/086af1b9d5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--nav bar-->
     <nav>
         <ul class="navbar">
-            <li><img src="Images/logo.jpg" alt="logo" id="logo"></li>
+            <li><img src="Images/logo.svg" alt="logo" id="logo"></li>
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -139,18 +141,43 @@ nurturing environment for the children
         <label for="message" class="form-label">Message</label>
         <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
       </div>
+      <div class="h-captcha" data-captcha="true"></div>
     </div>
     <button class="form-submit" type="submit">Send Message</button>
   </form>
+  <script src="https://js.hcaptcha.com/1/api.js"></script>
  </div>
  <div class="contact-company">
   <h1>Contact us</h1>
   <ul>
     <li><a href="">facebook</a></li>
+    <li><a href="">x</a></li>
+    <li><a href="">whatsapp</a></li>
+    <li><a href=""> Remayaorganisation@gmail.com</a></li>
   </ul>
+  <div class="news-letter">
+    <h1>Enroll to our daily newsletter</h1>
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="access_key" value="d3255553-9662-4110-89ab-a9a400f0e69c" />
+        <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+        <input type="hidden" name="from_name" value="Remaya Org" />
+        <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+    
+        <div class="form-group-container">
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+          </div>
+          <div class="h-captcha" data-captcha="true"></div>
+        </div>
+        <button class="form-submit" type="submit">Enroll</button>
+      </form>
+      <script src="https://js.hcaptcha.com/1/api.js"></script>
+  </div>
  </div>
-</section>
-<script src="https://js.hcaptcha.com/1/api.js"></script>
+ </section>
+
 
     <!-- Footer -->
     <footer>
@@ -159,5 +186,47 @@ nurturing environment for the children
         </div>
     </footer>
     <script src="app.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+
+<script>
+const form = document.getElementById('form');
+const result = document.getElementById('result');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const formData = new FormData(form);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+  result.innerHTML = "Please wait..."
+
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                result.innerHTML = "Form submitted successfully";
+            } else {
+                console.log(response);
+                result.innerHTML = json.message;
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+        })
+        .then(function() {
+            form.reset();
+            setTimeout(() => {
+                result.style.display = "none";
+            }, 3000);
+        });
+});
+</script>
 </body>
 </html>
