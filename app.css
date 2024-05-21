@@ -20,7 +20,7 @@ body {
 
 
 /* Navigation Bar */
-nav {
+nav .navbar{
     background-color: hsl(267, 71%, 77%);
     padding: 10px 20px;
     width: 100%;
@@ -34,6 +34,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    gap: 0px;
 }
 
 .navbar li {
@@ -42,48 +43,60 @@ nav {
 }
 
 .navbar li:first-child {
-    margin-right: auto;
+    justify-self: flex-start;
 }
 
 .navbar li a {
     color: black;
     text-decoration: none;
     padding: 0 30px;
-    display: flex;
-    align-items: center;
     height: 100%;
 
 }
 
 .navbar li a:hover {
-    background-color: #f0f0f0;
+    color: #f0f0f0;
 
 }
 .sidebar{
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    height: 300px;
+    height: 100vh;
     width: 100px;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    background-color: hsla(266, 71%, 67%, 0.411);
+    backdrop-filter: blur(20px);
     box-shadow: -10px 0 10px rgb(0, 0, 0.1);
     display: none;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content:space-between;
+    list-style-type: none;
+    padding: 20px;
+    gap: 5px;
 }
 .sidebar li {
     width: 100%;
+    border-bottom: 1px solid white;
+
     
+}
+.sidebar li:first-child {
+  align-self: flex-end;
+  border: none;
 }
 .sidebar a{
     width: 100%;
-    color: black;
+    color: hsl(263, 29%, 88%);
     text-decoration: none;
 }
+.sidebar a:hover{
+    color: hsla(261, 28%, 88%, 0.644);
+    transform: scale(1.2);
+    transition: transform ease-in 0.5s 1;
 
+}
 .menu-button{
     display: none;
 }
@@ -99,7 +112,7 @@ nav {
 }
 @media(max-width: 400px){
     .sidebar{
-        width: 100%
+        width: 50%;
     }
 }
 @media screen and (max-width: 768px) {
@@ -111,8 +124,11 @@ nav {
         right: 0px;
     }
     .navbar ul:first-child {
-       align-self: flex-start;
+       align-self: flex-end;
     }
+    .navbar li:last-child {
+        align-self: flex-end;
+     }
     .navbar li {
         margin-right: 0;
         margin-bottom: 10px;
