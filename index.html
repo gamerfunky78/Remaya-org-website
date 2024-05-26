@@ -11,13 +11,23 @@
 <body>
     <!--nav bar-->
     <nav>
-        <ul class="navbar">
-            <li><img src="Images/logo.svg" alt="logo" id="logo"></li>
+        <ul class="sidebar">
+            <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#mission-vision">Mission and Vision</a></li>
             <li><a href="#contact">Contact Us</a></li>
+            
+        </ul>
+        <ul class="navbar">
+            <li><img src="Images/logo.svg" alt="logo" id="logo"></li>
+            <li class="hideOnMobile"><a href="#hero">Home</a></li>
+            <li class="hideOnMobile"><a href="#about">About Us</a></li>
+            <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+            <li class="hideOnMobile"><a href="#mission-vision">Mission and Vision</a></li>
+            <li class="hideOnMobile"><a href="#contact">Contact Us</a></li>
+            <li class="menu-button" onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
     </nav>
     
@@ -30,7 +40,7 @@
             <p>
                 Being beneficiaries of AVSI and having experienced help from
                 scratch while attending <span style="color: hsl(93, 87%, 43%);">Cardinal Otunga School,</span> <a href="#">Lamas</a> , and <a href="#">Reshida</a> was inspired to dive deeper into
-                practical philanthropy ans start ReMaya Org
+                practical philanthropy and start ReMaya Org
             </p>
         </div>
         <img src="Images/image1.jpg" alt="hero img" id="hero-image">   
@@ -38,7 +48,7 @@
 
     <!-- About Us Section -->
     <section class="about-us" id="about">
-        <img src="Images/image4.jpg" alt="picture of team in ndiani" width="600px" style="border-radius: 30px;">
+        <img src="Images/image4.jpg" alt="picture of team in ndiani" id="aboutPic" width="600px" style="border-radius: 30px;">
         <div class="container">
             <h2>About Us</h2>
             <p>
@@ -64,20 +74,20 @@ nurturing environment for the children
                     <span style="color: hsla(120, 100%, 25%, 0.897); font-size: 2rem;">Education</span> Ensuring access to quality education for underprivileged children, supporting them
                     through their entire educational journey
                     <br><br>
-                    <img src="Images/image6.jpg" alt="studetns standing happy" width="300px" height="200px" style="border-radius: 10px;">
+                    <img src="Images/image6.jpg" alt="studetns standing happy" class="projImg" width="300px" height="200px" style="border-radius: 10px;">
                 </p>
 
                 <p>
                     <span style="color: hsla(120, 100%, 25%, 0.897); font-size: 2rem;">Promoting Gender Equality and Equity</span> <br>Advocating for equal opportunities across all 
                     <br><br>
-                    <img src="Images/image7.jpg" alt="studetns standing happy" width="300px" height="200px" style="border-radius: 10px;">
+                    <img src="Images/image7.jpg" alt="studetns standing happy" class="projImg" width="300px" height="200px" style="border-radius: 10px;">
                 </p>
 
                 <p>
                     <span style="color: hsla(120, 100%, 25%, 0.897); font-size: 2rem;">Community Outreach</span><br> Extending care and support to vulnerable populations through visits to
                     children's homes, engagement with street communities, and companionship for the elderly.
                     <br><br>
-                    <img src="Images/image5.jpg" alt="studetns standing happy" width="290px" height="200px" style="border-radius: 10px;">
+                    <img src="Images/image5.jpg" alt="students standing happy" class="projImg" class="projImg" width="290px" height="200px" style="border-radius: 10px;">
                 </p>
             </div>
         </div>
@@ -155,7 +165,7 @@ nurturing environment for the children
   </ul>
   <div class="news-letter">
     <h1>Enroll to our daily newsletter</h1>
-    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+    <form class="contact-form" id="form" action="https://api.web3forms.com/submit" method="POST">
 
         <input type="hidden" name="access_key" value="d3255553-9662-4110-89ab-a9a400f0e69c" />
         <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
