@@ -187,9 +187,10 @@ nav{
 
 @media(max-width:700px){
     #hero-image{
-        width: 90%;
+        width:100%;
         height: auto;
         border-radius: 15px;
+        align-self: center;
     }
     .hero {
         display: flex;
@@ -205,6 +206,11 @@ nav{
 @media(max-width:860px){
     #hero-image{
         width: 70%;
+    }
+ }
+ @media(max-width:500px){
+    #hero-image{
+        width: 100%;
     }
  }
 /* About Us Section */
@@ -255,11 +261,20 @@ nav{
 .each-proj p{
     width: 200px;
 }
+
+@media(max-width:500px){
+    .projImg{
+        width: 100%;
+       }
+ }
+ 
 @media(max-width:700px){
     .each-proj{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content:space-between;
+        align-items: center;
+        width: 90%;
     }
 }
 @media(max-width:860px){
