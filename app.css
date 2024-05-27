@@ -59,10 +59,10 @@ nav{
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
-    width: auto;
+    width: 70%;
+    height: 70%;
     z-index: 999;
-    background-color: hsla(266, 71%, 67%, 0.411);
+    background-color: hsla(266, 74%, 64%, 0.863);
     backdrop-filter: blur(20px);
     box-shadow: -10px 0 10px rgb(0, 0, 0.1);
     display: none;
@@ -129,11 +129,7 @@ nav{
         margin-right: 0;
         margin-bottom: 10px;
     }
-    .sidebar{
-        width: 50%;
-    }
    
-
 }
 
 
