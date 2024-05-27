@@ -74,10 +74,8 @@ nav{
     gap: 5px;
 }
 .sidebar li {
-    width: 100%;
     border-bottom: 1px solid white;
-
-    
+    align-items: center;  
 }
 .sidebar li:first-child {
   align-self: flex-end;
