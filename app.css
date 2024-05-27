@@ -141,12 +141,11 @@ nav{
 .hero {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #f0f0f0;
     text-align: center;
     padding: 100px 0;
     gap: 10px;
-    height: 650px;
 }
 
 .hero-content h1 {
@@ -157,8 +156,6 @@ nav{
 }
 
 .hero-content{
-    
-    height: 600px;
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -169,14 +166,24 @@ nav{
     color: black;
 }
 
-.hero-content p {
-    font-size: 18px;
+.hero-content p{
+    font-size: 1.5rem;
+    margin-top: 50px;
 }
 
 #hero-image{
     width: 700px;
-    height: 470px;
+    height: 460px;
     border-radius: 30px;
+}
+
+#hero-logo{
+    width: 200px;
+}
+.heroimg{
+    margin-top: 30px;
+    display: block;
+    gap: 40px;
 }
 
 @media(max-width:700px){
@@ -221,7 +228,11 @@ nav{
     text-align: center;
     color: hsla(251, 76%, 50%, 0.842);
 }
-
+@media(max-width:500px){
+    #aboutPic{
+        border-radius: 5px;
+    }
+ }
 @media(max-width:700px){
     .about-us {
         background-color: #fff;
@@ -235,6 +246,7 @@ nav{
     #aboutPic{
         width: 90%;
         height: auto;
+        border-radius: 10px;
     }
 }
 /* Projects Section */
@@ -250,16 +262,29 @@ nav{
 
 .each-proj{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 50px;
+
 }
 .each-proj p{
     width: 200px;
 }
 
 @media(max-width:500px){
+    .each-par h3{
+        font-size: 0.1rem;
+    }
     .projImg{
         width: 100%;
        }
+    .project-par{
+        display: block;
+    }
+    .each-par{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
  }
  
 @media(max-width:700px){
@@ -267,8 +292,19 @@ nav{
         display: flex;
         flex-direction: column;
         justify-content:space-between;
-        align-items: center;
+        gap: 50px;
         width: 90%;
+    }
+    .project-par{
+        display: block;
+    }
+    .each-par h3{
+        font-size: 0.1rem;
+    }
+    .each-par{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 }
 @media(max-width:860px){
@@ -276,6 +312,7 @@ nav{
     width: 100%;
    }
 }
+
 
 /* Mission and Vision Section */
 .mission-vision {
