@@ -21,7 +21,6 @@ body {
 /* Navigation Bar */
 nav{
     background-color: hsl(267, 71%, 77%);
-    padding: 10px 20px;
     width: 100%;
     height: 50px;
 }
@@ -198,6 +197,9 @@ nav{
         gap: 10px;
         height: 650px;
     }
+    .hero-content p{
+        width: 84%;
+    }
 }
 @media(max-width:860px){
     #hero-image{
@@ -222,35 +224,103 @@ nav{
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 100vw;
-    height: 500px;
+    width: 100%;
+    height: 600px;
 }
 .about-content{
     background-color: hsla(220, 17%, 86%, 0.288);
     backdrop-filter: blur(10px);
-    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    width: 100%;
+    height: 600px;
     font-size: 1.5rem;
 }
 
+.about-content p{
+    width: 90%;
+}
+
 .about-us h2 {
+    margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
     color: hsl(34, 89%, 45%);
+}
+
+.donate-support{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: hsla(180, 73%, 51%, 0.384);
+    height: 100vh;
+    width: 100vw;
+    color: hsl(0, 68%, 7%);
+}
+
+.donate{
+    background-color: hsl(192, 97%, 46%);
+    width: 400px;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 40px;
+}
+.donate img{
+    width: 50px;
+}
+.donate:hover{
+    background-color: hsla(192, 97%, 46%, 0.651);
+    cursor: pointer;
+}
+
+.support{
+    background-color: hsl(54, 94%, 38%);
+    width: 400px;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    border-radius: 40px;
+}
+.support:hover{
+    background-color: hsla(54, 94%, 38%, 0.616);
+    cursor: pointer;
+}
+.support img{
+    width: 50px;
 }
 @media(max-width:500px){
     #aboutPic{
         border-radius: 5px;
     }
+    .donate-support{
+        flex-direction: column;
+        font-size: 0.8rem;
+     }
+     .support img{
+        width: 20px;
+    }
+    .donate img{
+        width: 20px;
+    }
+    .support{
+        width: 150px;
+    }
+    .donate{
+        width: 150px;
+    }
  }
 @media(max-width:700px){
     .about-us {
         background-color: #fff;
-        padding: 80px 0;
         text-align: left;
         display: flex;
         flex-direction: column;
@@ -266,6 +336,21 @@ nav{
     .about-content{
         font-size: 1rem;
         height: 250px;
+    }
+    .donate-support{
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 10px;
+        padding: 10px;
+     }
+     .support img{
+        width: 20px;
+    }
+    .donate{
+        border-radius: 5px;
+    }
+    .support{
+        border-radius: 5px;
     }
 }
 /* Projects Section */
@@ -328,7 +413,7 @@ nav{
 }
 @media(max-width:860px){
    .projImg{
-    width: 100%;
+    width: 90%;
    }
 }
 
