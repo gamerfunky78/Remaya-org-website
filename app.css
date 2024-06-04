@@ -21,9 +21,10 @@ body {
 /* Navigation Bar */
 nav{
     background-color: hsl(267, 71%, 77%);
-    padding: 10px 20px;
-    width: 100%;
-    height: 50px;
+    padding: 20px 20px;
+    /* width: 100%; */
+    /* Avoid specifying the height and width work on padding since it will after on responsive design */
+    /* height: 50px; */
 }
 
 .navbar {
@@ -31,11 +32,13 @@ nav{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 0px;
+    /* Removed margin-height and updated to gap */
+    gap: 20px;
 }
 
 .navbar li {
-    margin-right: 50px;
+    /* Avoid this margin instead specify the Gap, since your using flex */
+    /* margin-right: 50px; */
 
 }
 
@@ -46,33 +49,53 @@ nav{
 .navbar li a {
     color: black;
     text-decoration: none;
-    padding: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(66, 65, 65);
+    transition: all 0.3s;
+    position: relative;
+    
+    /* padding: 5px; */
 }
 
 .navbar li a:hover {
     color: #f0f0f0;
+}
+.navbar li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background-color: red;
+}
+.navbar li a:hover .navbar li a::after{
+    width: 100%;
+    background-color: white;
 }
 
 .sidebar{
     position: fixed;
     top: 0;
     right: 0;
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
     z-index: 999;
     background-color: hsla(266, 74%, 64%, 0.863);
     backdrop-filter: blur(20px);
-    box-shadow: -10px 0 10px rgb(0, 0, 0.1);
-    display: none;
+    /* box-shadow: -10px 0 10px rgb(0, 0, 0.1); */
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content:space-between;
+    align-items: center;
+    /* justify-content:space-between; */
+    justify-content: space-evenly;
     list-style-type: none;
-    padding: 20px;
+    /* padding: 20px; */
     gap: 5px;
 }
 .sidebar li {
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
     align-items: center;  
 }
 .sidebar li:first-child {
@@ -83,14 +106,21 @@ nav{
     width: 100%;
     color: hsl(263, 29%, 88%);
     text-decoration: none;
+    font-size: 18px;
+    transition: all .4s ease;
 }
 .sidebar a:hover{
-    color: hsla(261, 28%, 88%, 0.644);
-    transform: scale(1.2);
-    transition: transform ease-in 0.5s 1;
+    /* By default diplay of a- anchor element is inline, so to specify transformation and margin stuffs you need to Change the siplay to inline-block or Block. */
+    display: inline-block;
+    /* Just us the opacity propety */
+    /* color: hsla(261, 28%, 88%, 0.644); */
+    opacity: 0.7;
+    transform: scale(1.1);
+    /* transition: transform ease-in 0.5s 1; */
 
 }
 .menu-button{
+    color: black;
     display: none;
 }
 
