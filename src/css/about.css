@@ -1,0 +1,77 @@
+/* About Us Section */
+.about-us {
+  position: relative;
+  background-image: url("https://media.istockphoto.com/id/1503372066/photo/many-books-stacked-with-blurred-background-of-bookstore-full-of-books-photo-with-copyspace.webp?b=1&s=170667a&w=0&k=20&c=5hhwIae45aYJzxa4_t0LqyLkHumPmMLbxt0IwtGPGY0=");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.about-content {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  text-align: center;
+  z-index: 1;
+}
+
+.about-content h1 {
+  margin-bottom: 20px;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.about-content h3 {
+  margin-bottom: 15px;
+  font-size: 2.3rem;
+  text-align: center;
+  font-weight: 500;
+}
+.about-content p {
+  margin-top: 25px;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+.nav-button {
+  background-color: var(--primary-color);
+  color: var(--main-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.nav-button.prev {
+  left: 20px;
+}
+
+.nav-button.next {
+  right: 20px;
+}
+
+.nav-button:hover {
+  background-color: var(--primary-color-shades);
+}
+
+.about-us::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(10px);
+  z-index: 0;
+}

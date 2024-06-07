@@ -1,252 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REMAYA ORg</title>
-    <link rel="stylesheet" href="app.css">
-    <link rel="shortcut icon" href="./Images/logo.svg" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/086af1b9d5.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<main>
-        <!--nav bar-->
-        <nav>
-            <!-- We have repeated code which affect performance -->
-            <!-- Avoid inline css as much as posible since they have higher specificity thus limiting on Scalability -->
-            <ul class="sidebar">
-                <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#mission-vision">Mission and Vision</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                
-            </ul>
-            <ul class="navbar">
-                <li><img src="Images/logo.svg" alt="logo" id="logo"></li>
-                <li class="hideOnMobile"><a href="#hero">Home</a></li>
-                <li class="hideOnMobile"><a href="#about">About Us</a></li>
-                <li class="hideOnMobile"><a href="#projects">Projects</a></li>
-                <li class="hideOnMobile"><a href="#mission-vision">Mission and Vision</a></li>
-                <li class="hideOnMobile"><a href="#contact">Contact Us</a></li>
-                <li class="menu-button" onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-            </ul>
-        </nav>
-        
-        <hr>
-        <!-- Hero Section -->
-        <section class="hero" >
-            <div class="heroImg">
-                <img src="Images/logo.svg" id="hero-logo">
-                <div class="hero-content">
-                    <p>
-                    Being beneficiaries of AVSI and having experienced help from
-                    scratch while attending <span style="color: hsl(93, 87%, 43%);">Cardinal Otunga School,</span> <a href="#">Lamas</a> , and <a href="#">Reshida</a> was inspired to dive deeper into
-                    practical philanthropy and start REMAYA Org
-                    </p>
-                </div>
-            </div>
-            <img src="Images/image1.jpg" alt="hero img" id="hero-image"> 
-            
-        </section>
-    
-        <!-- About Us Section -->
-        <section class="about-us" id="about">
-            <div class="about-content">
-                <h2>About Us</h2>
-                <p>
-                    We are located  in the vibrant city of Nairobi, Kenya, REMAYA Organization operates with a global vision
-                    and local
-                </p>
-                <p>
-                    The inaugural endeavor of REMAYA was the "Cup of Tea with Ndiini Primary School Students," marking
-    the commencement of their noble journey. This initiative led to the identification and comprehensive
-    support of nine deserving children, ensuring their access to full education. 
-                </p>
-            </div>
-        </section>
-    
-        <!-- Projects Section -->
-        <section class="projects" id="projects">
-            <div class="container">
-                <h2>Projects</h2>
-                <div class="each-proj">
-                    <div class="project-par">
-                        <p class="each-par">
-                        <h3><span style="color: hsla(120, 100%, 25%, 0.897); font-size: 2rem;">Education</span></h3>
-                        Ensuring access to quality education for underprivileged children, supporting them
-                        through their entire educational journey
-                        </p>
-                        <br><br>
-                        <img src="Images/image6.jpg" alt="studetns standing happy" class="projImg" width="300px" height="200px" style="border-radius: 10px;">
-                    </div>
-    
-                    <div class="project-par">
-                        <p class="each-par">
-                            <h3> <span style="color: hsla(120, 100%, 25%, 0.897); font-size: 2rem;">Promoting Gender Equality and Equity</span> <br>
-                            </h3>
-                            Advocating for equal opportunities across all 
-                        </p>
-                        <br><br>
-                        <img src="Images/image7.jpg" alt="studetns standing happy" class="projImg" width="300px" height="200px" style="border-radius: 10px;">
-                    </div>
-    
-                    <div class="project-par">
-                        <p class="each-par">
-                            <h3>
-                                                    <span style="color: hsla(120, 100%, 25%, 0.897); font-size: 2rem;">Community Outreach</span>     </h3>
-                            <br> Extending care and support to vulnerable populations through visits to children's homes, engagement with street communities, and companionship for the elderly.
-                        </p>
-                        <br><br>
-                        <img src="Images/image5.jpg" alt="students standing happy" class="projImg" class="projImg" width="290px" height="200px" style="border-radius: 10px;">
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <!-- Mission and Vision Section -->
-        <section class="mission-vision" id="mission-vision">
-            <div class="container">
-                <h2>Mission and Vision</h2>
-                <div class="mission-content">
-                    <p class="mission-par">
-                        We envision a world where every individual, regardless of their circumstances, has the opportunity to thrive and achieve their full potential.
-                         Our <strong style="color: hsl(120, 95%, 32%); font-size: 1.5rem;">vision</strong> is to inspire smiles, ignite hope, and foster positive change, making the world a brighter and more compassionate place for generations to come.
-                        <br><br>
-                        <img src="Images/smilingkids1.jpeg" alt="smiling kids" style="border-radius: 20px;">
-                    </p>
-                    <p  class="mission-par">
-                        <img src="Images/studyingkids.jpeg" alt="smiling kids" style="border-radius: 20px;"><br><br>
-                        REMAYA Organization is dedicated to fostering education, promoting gender equality, empowering
-                        individuals, raising awareness about mental health and climate change, eradicating poverty, fostering
-                        economic empowerment, and nurturing a culture of care, support, and human dignity within
-                        communities
-                    </p>
-                </div>
-            </div>
-        </section>
-    
-       <!--Contact section-->
-    
-    <section class="contact-section" id = "contact">
-     <div>
-      <div class="contact-intro">
-        <h2 class="contact-title">Get in Touch</h2>
-        <p class="contact-description">
-          Fill out the form below and we'll get back to you as soon as possible.
-        </p>
-      </div>
-    
-      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-    
-        <input type="hidden" name="access_key" value="d3255553-9662-4110-89ab-a9a400f0e69c" />
-        <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
-        <input type="hidden" name="from_name" value="My Website" />
-        <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
-    
-        <div class="form-group-container">
-          <div class="form-group">
-            <label for="name" class="form-label">Name</label>
-            <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REMAYA Org</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="/src/css/btn.css" />
+    <link rel="stylesheet" href="/src/css/hero.css" />
+    <link rel="stylesheet" href="/src/css/about.css" />
+    <link rel="stylesheet" href="/src/css/projects.css" />
+
+
+    <link rel="shortcut icon" href="./Images/logo.svg" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/086af1b9d5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <!-- <ul class="sidebar">
+          <li onclick="hidesidebar()">
+            <img src="/Images/close-menu.svg" alt="Sidebar icon" />
+          </li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#mission-vision">Mission and Vision</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul> -->
+        <!-- Main Navbar -->
+        <div class="navbar">
+          <div class="logo-container">
+            <img src="Images/logo.svg" alt="logo" />
           </div>
-          <div class="form-group">
-            <label for="email" class="form-label">Email</label>
-            <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
-          </div>
-          <div class="form-group">
-            <label for="phone" class="form-label">Phone</label>
-            <input id="phone" name="phone" class="form-input" placeholder="+254 7123456" type="text" />
-          </div>
-          <div class="form-group">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+          <ul class="nav-items">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li>
+              <a href="#mission-vision">Mission and Vision</a>
+            </li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+          <div>
+            <div class="menu-button" onclick="showsidebar()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="26px"
+                viewBox="0 -960 960 960"
+                width="26px"
+                fill="#000"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                />
+              </svg>
+            </div>
+            <button class="login-btn">Login</button>
           </div>
         </div>
-        <button class="form-submit" type="submit"><i class="fa-regular fa-paper-plane"></i> &nbsp Send Message</button>
-      </form>
-     </div>
-     <div class="contact-company">
-      <h1>Contact us</h1>
-      <ul>
-        <li><i class="fa-brands fa-facebook"></i><a href="https://m.facebook.com/people/Remaya-ORG/100064591067526/">&nbspRemayaORG</a></li>
-        <li><i class="fa-brands fa-x-twitter"></i><a href="">&nbspx</a></li>
-        <li><i class="fa-brands fa-square-whatsapp"></i>&nbsp +254-774-545-775</li>
-        <li><i class="fa-solid fa-envelope"></i>&nbsp Remayaorganisation@gmail.com</li>
-      </ul>
-      <div class="news-letter">
-        <h1>Enroll to our daily newsletter</h1>
-        <form class="contact-form" id="form" action="https://api.web3forms.com/submit" method="POST">
-    
-            <input type="hidden" name="access_key" value="d3255553-9662-4110-89ab-a9a400f0e69c" />
-            <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
-            <input type="hidden" name="from_name" value="Remaya Org" />
-            <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
-        
+      </nav>
+      <!-- Avoid this -->
+      <!-- <hr /> -->
+      <!-- <section class="hero">
+        <div class="heroImg">
+          <img src="Images/logo.svg" id="hero-logo" alt="hero logo" />
+          <div class="hero-content">
+            <p>
+              Being beneficiaries of AVSI and having experienced help from
+              scratch while attending
+              <span class="highlight">Cardinal Otunga School,</span>
+              <a href="#">Lamas</a>, and <a href="#">Reshida</a> was inspired to
+              dive deeper into practical philanthropy and start REMAYA Org.
+            </p>
+          </div>
+        </div>
+        <img src="Images/image1.jpg" alt="hero img" id="hero-image" />
+      </section> -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Welcome to <span class="hero-heighlight">REMAYA Org</span></h1>
+          <p>
+            Being beneficiaries of AVSI and having experienced help from scratch
+            while attending
+            <span class="highlight">Cardinal Otunga School,</span>
+            <a href="#">Lamas</a>, and <a href="#">Reshida</a> was inspired to
+            dive deeper into practical philanthropy and start REMAYA Org.
+          </p>
+          <div class="hero-buttons">
+            <button class="login-btn">Join us</button>
+            <button class="learn-more-btn">Learn More</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img id="hero-image" src="Images/image1.jpg" alt="School Image" />
+        </div>
+      </section>
+
+      <section class="about-us" id="about">
+        <button class="nav-button prev">&laquo;</button>
+        <div class="about-content">
+          <h1>About Us</h1>
+          <h3>
+            We are located in the vibrant city of Nairobi, Kenya, REMAYA
+            Organization operates with a global vision and local action.
+          </h3>
+          <p>
+            The inaugural endeavor of REMAYA was the "Cup of Tea with Ndiini
+            Primary School Students," marking the commencement of their noble
+            journey. This initiative led to the identification and comprehensive
+            support of nine deserving children, ensuring their access to full
+            education.
+          </p>
+        </div>
+        <button class="nav-button next">&raquo;</button>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="each-proj">
+            <div class="project-par">
+              <h3><span class="project-title">Education</span></h3>
+              <p>
+                Ensuring access to quality education for underprivileged
+                children, supporting them through their entire educational
+                journey.
+              </p>
+              <img
+                src="Images/image6.jpg"
+                alt="students standing happy"
+                class="projImg"
+              />
+            </div>
+            <div class="project-par">
+              <h3>
+                <span class="project-title"
+                  >Gender Equality and Equity</span
+                >
+              </h3>
+              <p>Advocating for equal opportunities across all.engagement with street communities,
+                and companionship for the elderly.</p>
+              <img
+                src="Images/image7.jpg"
+                alt="students standing happy"
+                class="projImg"
+              />
+            </div>
+            <div class="project-par">
+              <h3><span class="project-title">Community Outreach</span></h3>
+              <p>
+                Extending care and support to vulnerable populations through
+                visits to children's homes,
+              </p>
+              <img
+                src="Images/image5.jpg"
+                alt="students standing happy"
+                class="projImg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mission-vision" id="mission-vision">
+        <div class="container">
+          <h2>Mission and Vision</h2>
+          <div class="mission-content">
+            <p class="mission-par">
+              We envision a world where every individual, regardless of their
+              circumstances, has the opportunity to thrive and achieve their
+              full potential. Our <strong class="highlight">vision</strong> is
+              to inspire smiles, ignite hope, and foster positive change, making
+              the world a brighter and more compassionate place for generations
+              to come.
+              <img src="Images/smilingkids1.jpeg" alt="smiling kids" />
+            </p>
+            <p class="mission-par">
+              REMAYA Organization is dedicated to fostering education, promoting
+              gender equality, empowering individuals, raising awareness about
+              mental health and climate change, eradicating poverty, fostering
+              economic empowerment, and nurturing a culture of care, support,
+              and human dignity within communities.
+              <img src="Images/studyingkids.jpeg" alt="studying kids" />
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div>
+          <div class="contact-intro">
+            <h2 class="contact-title">Get in Touch</h2>
+            <p class="contact-description">
+              Fill out the form below and we'll get back to you as soon as
+              possible.
+            </p>
+          </div>
+
+          <form
+            class="contact-form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="d3255553-9662-4110-89ab-a9a400f0e69c"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="New Contact Form Submission from Web3Forms"
+            />
+            <input type="hidden" name="from_name" value="My Website" />
             <div class="form-group-container">
               <div class="form-group">
-                <label for="email" class="form-label">Email</label>
-                <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+                <label for="name" class="form-label">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  class="form-input"
+                  placeholder="Your name"
+                  type="text"
+                />
               </div>
-              <div class="h-captcha" data-captcha="true"></div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Your email"
+                  type="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  class="form-input"
+                  placeholder="+254 7123456"
+                  type="text"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-textarea"
+                  id="message"
+                  name="message"
+                  placeholder="Your message"
+                ></textarea>
+              </div>
             </div>
-            <button class="form-submit" type="submit">Enroll</button>
+            <button class="form-submit" type="submit">
+              <i class="fa-regular fa-paper-plane"></i> &nbsp;Send Message
+            </button>
           </form>
-          <script src="https://js.hcaptcha.com/1/api.js"></script>
-      </div>
-     </div>
-     </section>
-    
-    
-        <!-- Footer -->
-        <footer>
-            <div class="container">
-                <p>&copy; 2024 REMAYA Org. All rights reserved.</p>
-            </div>
-        </footer>
-        <script src="app.js"></script>
-        <script src="https://web3forms.com/client/script.js" async defer></script>
-    
-    <script>
-    const form = document.getElementById('form');
-    const result = document.getElementById('result');
-    
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const formData = new FormData(form);
-      const object = Object.fromEntries(formData);
-      const json = JSON.stringify(object);
-      result.innerHTML = "Please wait..."
-    
-        fetch('https://api.web3forms.com/submit', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: json
-            })
-            .then(async (response) => {
-                let json = await response.json();
-                if (response.status == 200) {
-                    result.innerHTML = "Form submitted successfully";
-                } else {
-                    console.log(response);
-                    result.innerHTML = json.message;
-                }
-            })
-            .catch(error => {
-                console.log(error);
-                result.innerHTML = "Something went wrong!";
-            })
-            .then(function() {
-                form.reset();
-                setTimeout(() => {
-                    result.style.display = "none";
-                }, 3000);
-            });
-    });
-    </script>
-</main>
-</body>
+        </div>
+        <div class="contact-company">
+          <h1>Contact us</h1>
+          <ul>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-whatsapp"></i></li>
+          </ul>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <p>&copy; 2024 REMAYA Org. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="/src/js/app.js"></script>
+  </body>
 </html>

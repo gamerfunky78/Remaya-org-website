@@ -1,0 +1,109 @@
+
+/* Hero Section */
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--main-color);
+  text-align: left;
+  /* padding: 100px 0; */
+  gap: 20px;
+}
+
+.hero-content {
+  /* flex: 1; */
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.hero-content p {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.hero-image {
+  /* flex: 1; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-heighlight {
+  padding: 5px 10px;
+  background-image: linear-gradient(var(--primary-color), var(--secondary-color-light));
+  color: white;
+  transform: skewX(60deg);
+}
+
+#hero-image {
+  max-width: 100%;
+  /* border-radius: 10px; */
+  height: 100vh;
+}
+
+.login-btn, .learn-more-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-btn {
+  background-color: var(--primary-color);
+  color: var(--main-color);
+}
+
+.learn-more-btn {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
+
+.login-btn:hover {
+  background-color: var(--primary-color-shades);
+  transform: scale(1.05);
+}
+
+.learn-more-btn:hover {
+  background-color: var(--secondary-color-shades);
+  transform: scale(1.05);
+}
+
+.login-btn:active, .learn-more-btn:active {
+  transform: scale(1);
+}
+
+.login-btn:focus, .learn-more-btn:focus {
+  outline: 2px solid var(--secondary-color-light);
+  outline-offset: 4px;
+}
+
+@media(max-width: 700px) {
+  .hero {
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: 50px 20px;
+  }
+  
+  .hero-image {
+      margin-top: 20px;
+  }
+  
+  .login-btn, .learn-more-btn {
+      width: 100%;
+      padding: 15px;
+  }
+}

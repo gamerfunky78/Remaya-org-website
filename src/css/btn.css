@@ -1,0 +1,52 @@
+.login-btn {
+  background-color: var(--primary-color);
+  color: var(--main-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: var(--primary-color-shades);
+  transform: scale(1.05);
+}
+
+.login-btn:active {
+  background-color: var(--secondary-color-shades);
+  transform: scale(1);
+}
+
+.login-btn:focus {
+  outline: 2px solid var(--secondary-color);
+  outline-offset: 4px;
+}
+
+/* Optional: Adding additional animations for fun interaction */
+.login-btn::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  opacity: 0;
+  transition: width 0.4s ease, height 0.4s ease, opacity 0.8s;
+}
+
+.login-btn:active::after {
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+  transition: width 0s ease, height 0s ease;
+}
+@media (max-width: 800px) {
+  .login-btn {
+    display: none;
+  }
+
+}
