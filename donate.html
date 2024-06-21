@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+    <link rel="stylesheet" href="donate.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="mpesaForm">
+            <label for="phone">Phone Number (after 254):</label>
+            <div class="phone-input">
+                <span>254</span>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="\d{9}" title="Enter 9 digits after 254" required>
+            </div>
+            
+            <label for="amount">Amount of Money:</label>
+            <input type="number" id="amount" name="amount" placeholder="Enter the amount" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="mpesa.js"></script>
+</body>
+</html>
