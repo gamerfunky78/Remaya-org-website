@@ -261,9 +261,6 @@ nav {
         gap: 10px;
         height: 650px;
     }
-    .hero-content p{
-        width: 84%;
-    }
 }
 
 @media(max-width:860px) {
@@ -291,28 +288,23 @@ nav {
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 100%;
-    height: 600px;
+    width: 100vw;
+    height: 500px;
 }
 
 .about-content {
     background-color: hsla(220, 17%, 86%, 0.288);
     backdrop-filter: blur(10px);
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 600px;
+    height: 500px;
     font-size: 1.5rem;
 }
 
-.about-content p{
-    width: 90%;
-}
-
 .about-us h2 {
-    margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
     color: hsl(34, 89%, 45%);
@@ -327,6 +319,7 @@ nav {
 @media(max-width:700px) {
     .about-us {
         background-color: #fff;
+        padding: 80px 0;
         text-align: left;
         display: flex;
         flex-direction: column;
@@ -343,21 +336,6 @@ nav {
     .about-content {
         font-size: 1rem;
         height: 250px;
-    }
-    .donate-support{
-        flex-direction: column;
-        gap: 10px;
-        border-radius: 10px;
-        padding: 10px;
-     }
-     .support img{
-        width: 20px;
-    }
-    .donate{
-        border-radius: 5px;
-    }
-    .support{
-        border-radius: 5px;
     }
 }
 
@@ -431,10 +409,6 @@ nav {
     .projImg {
         width: 100%;
     }
-@media(max-width:860px){
-   .projImg{
-    width: 90%;
-   }
 }
 
 
