@@ -55,16 +55,28 @@
     background-color: aliceblue;
     cursor: pointer;
     border-color: black;
+    animation: shake-min;
+    animation-duration: 1s;
 }
 .hero-navs:nth-child(2):hover{
     background-color: rgb(255, 255, 255);
     cursor: pointer;
-    border-color: orange;
+    border-color:darkorange;
     color: #000000;
+    animation: shake-min;
+    animation-duration: 1s;
+}
+@keyframes shake-min{
+    0%{transform: rotateZ(2deg);}
+    25%{transform: rotateZ(-2deg);}
+    50%{transform: rotateZ(2deg);}
+    100%{transform: rotateZ(-2deg);}
 }
 
-
-
+#Enroll-But:hover{
+    animation: shake-min;
+    animation-duration: 1s;
+}
 
 
 

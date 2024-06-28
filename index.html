@@ -12,12 +12,12 @@
 </head>
 
 <body>
-    <main>
+    <main id="MAIN">
         <!--nav bar-->
         <nav>
             <!-- We have repeated code which affect performance -->
             <!-- Avoid inline css as much as posible since they have higher specificity thus limiting on Scalability -->
-            <ul class="sidebar">
+            <ul class="sidebar" style="display: none;">
                 <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
                             viewBox="0 -960 960 960" width="26px" fill="#5f6368">
                             <path
@@ -198,7 +198,7 @@
                                 placeholder="Your message" style="resize: none ; font-family: cursive;"></textarea>
                         </div>
                     </div>
-                    <button class="form-submit" type="submit"><i class="fa-regular fa-paper-plane"></i> &nbsp Send
+                    <button class="form-submit" type="submit" id="Enroll-But"><i class="fa-regular fa-paper-plane"></i> &nbsp Send
                         Message</button>
                 </form>
             </div>
@@ -231,7 +231,7 @@
                             </div>
                             <div class="h-captcha" data-captcha="true"></div>
                         </div>
-                        <button class="form-submit" type="submit">Enroll</button>
+                        <button class="form-submit" type="submit" id="Enroll-But">Enroll</button>
                     </form>
                     <script src="https://js.hcaptcha.com/1/api.js"></script>
                 </div>

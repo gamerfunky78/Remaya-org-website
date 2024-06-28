@@ -17,6 +17,11 @@ function hidesidebar(){
     sidebar.style.display = 'none'
 }
 window.onscroll = () => {
+    
     let element = document.getElementById("LP");
-    element.style.animation = "fadeout 1s";
+    element.style.animation = "none"
+    element.style.animation = "fadeout 1.5s";
 };
+
+
+
