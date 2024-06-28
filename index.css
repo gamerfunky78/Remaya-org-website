@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Tilt+Warp&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+.landing-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+}
+.heading-info{
+    font-size: 170px;
+    font-family: Tilt Warp;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px black;
+    margin: 10px;
+}
+.hero-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    margin: 10px;
+}
+.hero-description{
+    font-size: 30px;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    color: rgb(0, 0, 0);
+}
+.hero-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 10px;
+}
+.hero-navs:nth-child(1){
+    background-color: orange;
+    height: 50px;
+    width: 90px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.hero-navs:nth-child(2){
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 90px;
+    border-radius: 6px;
+    border-style: solid;
+    font-size: 15px;
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+.hero-navs:nth-child(1):hover{
+    background-color: aliceblue;
+    cursor: pointer;
+    border-color: black;
+}
+.hero-navs:nth-child(2):hover{
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-color: orange;
+    color: #000000;
+}
+
+
+
+
+
+
+

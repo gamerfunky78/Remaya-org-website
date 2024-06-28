@@ -24,7 +24,7 @@ body {
 
 /* Navigation Bar */
 nav {
-    background-color: hsl(267, 71%, 77%);
+    background-color: hsl(0, 0%, 100%);
     padding: 20px 20px;
     /* width: 100%; */
     /* Avoid specifying the height and width work on padding since it will after on responsive design */
@@ -38,7 +38,6 @@ nav {
     justify-content: flex-end;
     /* Removed margin-height and updated to gap */
     gap: 20px;
-    background-color: transparent;
 }
 
 .navbar li {
@@ -62,6 +61,10 @@ nav {
     75%{transform: rotateZ(15deg);}
     100%{transform: rotateZ(-15deg);}
 }
+@keyframes fadeout{
+    from{transform: scale(1);}
+    to{transform: scale(0.01);}
+}
 .navbar li:first-child {
     justify-self: flex-start;
 }
@@ -79,7 +82,7 @@ nav {
 }
 
 .navbar li a:hover {
-    color: #f0f0f0;
+    color: orange;
 }
 
 .navbar li a::after {
@@ -89,7 +92,7 @@ nav {
     height: 3px;
     top: 100%;
     left: 0;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 
 .navbar li a:hover .navbar li a::after {
@@ -198,10 +201,12 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     text-align: center;
+    align-items: center;
     padding: 100px 0;
     gap: 10px;
+    height: 70vh;
 }
 
 .hero-content h1 {
@@ -343,6 +348,10 @@ nav {
 .projects {
     background-color: #f0f0f0;
     padding: 80px 0;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .projects h2 {
@@ -369,7 +378,7 @@ nav {
     .projImg {
         width: 100%;
     }
-
+    
     .project-par {
         display: block;
     }
@@ -389,7 +398,9 @@ nav {
         gap: 50px;
         width: 90%;
     }
-
+    #heading-info{
+        font-size: 100px;
+    }
     .project-par {
         display: block;
     }
