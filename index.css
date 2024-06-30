@@ -8,13 +8,19 @@
     align-items: center;
     background-color: rgb(255, 255, 255);
     margin: 10px;
+    background-image: url(Images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
 }
 .heading-info{
     font-size: 170px;
     font-family: Tilt Warp;
     color: rgb(0, 0, 0);
-    text-shadow: 1px 1px black;
+    text-shadow: inset;
     margin: 10px;
+    font-weight: bolder;
+    
 }
 .hero-info{
     display: flex;
@@ -24,9 +30,10 @@
     margin: 10px;
 }
 .hero-description{
-    font-size: 30px;
+    font-size: 35px;
     font-family: "Yanone Kaffeesatz", sans-serif;
     color: rgb(0, 0, 0);
+    font-weight: bold;
 }
 .hero-buttons{
     display: flex;
