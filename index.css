@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Tilt+Warp&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Tilt+Warp&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 .landing-page{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
     align-items: center;
     background-color: rgb(255, 165, 0, 0.7);
     margin: none;
     background-color: orange(255, 136, 0, 0.5);
+}
+.description{
+    font-family: Arsenal SC, sans-serif;
+    font-weight: 700;
 }
 .heading-info{
     font-size: 170px;
@@ -16,7 +21,6 @@
     color: rgb(0, 0, 0);
     margin: 10px;
     font-weight: bolder;
-
 }
 .hero-info{
     display: flex;
@@ -86,7 +90,37 @@
     animation: shake-min;
     animation-duration: 1s;
 }
-
-
-
+#BTT{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: orange;
+    position:fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 25px;
+}
+#BTT:hover{
+    cursor: pointer;
+}
+.DONATE{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px;
+}
+.donate{
+    background-color: orange;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: orange;
+    
+}
+.donate:hover{
+    cursor: pointer;
+    background-color: white;
+    border-color: black;
+}
 

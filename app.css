@@ -1,3 +1,4 @@
+
 /* Reset CSS */
 * 
 {
@@ -200,7 +201,7 @@ nav {
     align-items: center;
     padding: 100px 0;
     gap: 10px;
-    height: 70vh;
+    height: 100vh;
 }
 
 .hero-content h1 {
@@ -287,8 +288,7 @@ nav {
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 100vw;
-    height: 500px;
+    height: 50vh;
 }
 
 .about-content {
@@ -342,7 +342,7 @@ nav {
 .projects {
     background-color: #f0f0f0;
     padding: 80px 0;
-    height: 70vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -471,6 +471,7 @@ nav {
     background: #f0f0f0;
     display: flex;
     justify-content: space-evenly;
+    height: 80vh;
 }
 
 .contact-intro>*+* {
