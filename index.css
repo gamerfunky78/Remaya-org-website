@@ -6,21 +6,17 @@
     justify-content: center;
     height: 90vh;
     align-items: center;
-    background-color: rgb(255, 255, 255);
-    margin: 10px;
-    background-image: url(Images/logo.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20px;
+    background-color: rgb(255, 165, 0, 0.7);
+    margin: none;
+    background-color: orange(255, 136, 0, 0.5);
 }
 .heading-info{
     font-size: 170px;
     font-family: Tilt Warp;
     color: rgb(0, 0, 0);
-    text-shadow: inset;
     margin: 10px;
     font-weight: bolder;
-    
+
 }
 .hero-info{
     display: flex;
@@ -42,7 +38,7 @@
     margin: 10px;
 }
 .hero-navs:nth-child(1){
-    background-color: orange;
+    background-color: darkorange;
     height: 50px;
     width: 90px;
     border-radius: 6px;
@@ -64,6 +60,12 @@
     border-color: black;
     animation: shake-min;
     animation-duration: 1s;
+}
+#MAIN {
+    background-image: url(Images/image3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
 }
 .hero-navs:nth-child(2):hover{
     background-color: rgb(255, 255, 255);

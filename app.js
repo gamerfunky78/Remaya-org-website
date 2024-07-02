@@ -16,12 +16,6 @@ function hidesidebar(){
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'none'
 }
-window.onscroll = () => {
-    
-    let element = document.getElementById("LP");
-    element.style.animation = "none"
-    element.style.animation = "fadeout 1.5s";
-};
 
 
 

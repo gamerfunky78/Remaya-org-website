@@ -39,12 +39,6 @@ nav {
     /* Removed margin-height and updated to gap */
     gap: 20px;
 }
-
-.navbar li {
-    /* Avoid this margin instead specify the Gap, since your using flex */
-    /* margin-right: 50px; */
-
-}
 #social-icon{
     scale: 1.5;
     margin-right: 10px;
@@ -427,6 +421,10 @@ nav {
 .mission-vision {
     background-color: hsla(76, 73%, 51%, 0.253);
     padding: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mission-vision h2 {
