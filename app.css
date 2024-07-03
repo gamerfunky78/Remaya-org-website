@@ -25,7 +25,7 @@ body {
 
 /* Navigation Bar */
 nav {
-    background-color: hsl(0, 0%, 100%);
+    background-color: rgb(255, 165, 0, 0.7);
     padding: 20px 20px;
     /* width: 100%; */
     /* Avoid specifying the height and width work on padding since it will after on responsive design */
@@ -39,6 +39,11 @@ nav {
     justify-content: flex-end;
     /* Removed margin-height and updated to gap */
     gap: 20px;
+    position: fixed;
+    top: 15px;
+    left: 1px;
+    width: 100%;
+    height: 40px;
 }
 #social-icon{
     scale: 1.5;
@@ -87,7 +92,8 @@ nav {
     height: 3px;
     top: 100%;
     left: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: none
+    ;
 }
 
 .navbar li a:hover .navbar li a::after {
